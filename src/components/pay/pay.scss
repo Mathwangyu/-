@@ -1,0 +1,152 @@
+@import '@/qunar/reset.scss';
+
+.content {
+  .cont {
+    padding: 0 5%;
+    .detail {
+      @include rect(100%, auto);
+      @include flexbox();
+      padding: 5% 0;
+      border-bottom: .01rem #ccc solid;
+      @include justify-content(space-between);
+      .name {
+        margin-right: 2%;
+        p {
+          font-size: .15rem;
+        }
+        span {
+          @include color(#aaa);
+          font-size: .12rem;
+        }
+      }
+      .pic {
+        @include rect(1rem, auto);
+        font-size: .12rem;
+        padding-top: .1rem;
+        span {
+          text-decoration: line-through;
+        }
+      }
+    }
+    .choise {
+      @include rect(100%, auto);
+      
+      .coupon {
+        @include flexbox();
+        @include justify-content(space-between);
+        padding: 5% 0;
+        border-bottom: .01rem #ccc solid;
+        p {
+          font-size: .16rem;
+        }
+        span {
+          font-size: .12rem;
+          @include color(#ccc);
+        }
+      }
+      .dan {
+        padding: 15% 0;
+        text-align: center;
+        h1 {
+          display: inline-block;
+          font-weight: 700;
+          font-size: .3rem;
+        }
+      }
+      .aways {
+        .aa {
+          @include color(#999);
+        }
+        .am-list {
+          .am-list-body {
+            .am-list-item {
+              .am-list-line {
+                .am-list-extra {
+                  .am-radio {
+                    top : .23rem;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .wei {
+          
+          padding: 6% 0;
+          border-bottom: .01rem #eee solid;
+          @include flexbox();
+          @include justify-content(space-between);
+          .info {
+            @include rect(1.5rem, auto);
+            .log {
+              @include rect(.4rem, auto);
+              display: inline-block;
+              margin-right: 5%;
+            }
+            
+          }
+          .check {
+
+          }
+        }
+        .aply {
+          padding: 6% 0;
+          border-bottom: .01rem #eee solid;
+          @include flexbox();
+          @include justify-content(space-between);
+          .info {
+            @include rect(1.5rem, auto);
+            .log {
+              @include rect(.4rem, auto);
+              display: inline-block;
+              margin-right: 5%;
+            }
+            span {
+
+            }
+          }
+          .check {
+            
+          }
+        }
+      }
+      .sure {
+        @include rect(100% , auto);
+        @include flexbox();
+        @include justify-content(center);
+        margin: 7% 0;
+        span {
+          text-align: center;
+          @include rect(80% , auto);
+          // font: .15rem/.4rem "";
+          font-size: .15rem;
+          line-height: .4rem;
+          @include background-color(#F97927);
+          border-radius: .05rem;
+          @include color(#fff);
+        }
+      }
+      .bo {
+        text-align: center;
+        margin-bottom: 10%;
+        span {
+          margin-left: 3%;
+        }
+      }
+    }
+  }
+  .know {
+    @include background-color(#eee);
+    padding:5%;
+    @include color(#aaa);
+    font-size: .14rem;
+    p{
+      margin: 3% 0;
+    }
+    ul {
+      li {
+        margin: 2% 0;
+      }
+    }
+  }
+}

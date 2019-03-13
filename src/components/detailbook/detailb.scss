@@ -1,0 +1,100 @@
+@import '@/qunar/reset.scss';
+
+.content {
+  .log {
+    img {
+      @include rect(100%, 20%);
+    }
+  }
+    .lvmsg {
+      @include background-color(#fff);
+      @include rect(100%, auto);
+      .msg {
+        padding: 0 5%;
+        h2 {
+          @include color(#999);
+          padding: 5% 0;
+        }
+        ul {
+          li {
+            margin-top: 5%;
+            border-bottom: .01rem #eee solid;
+            .t {
+              @include flexbox();
+
+              img {
+                @include flex(.4);
+              }
+              p {
+                font-weight: 700;
+                @include flex();
+                span {
+                  display: block;
+                  font-weight: 100;
+                }
+              }
+              .zan {
+                @include flex(.2);
+                @include color(#ccc);
+                span {
+                  font-size: .14rem;
+                  margin:0 0 0 .08rem; 
+                }
+                img {
+                  @include rect(.17rem, .17rem);
+                  vertical-align: middle;
+                }
+              }
+            }
+            .m {
+              margin-top: 1%;
+            }
+            .b {
+              @include flexbox();
+              @include justify-content(flex-end);
+              margin: 5% 0;
+              a {
+                @include color(#999);
+                font-size: .12rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  .footer {
+    position: fixed;
+    bottom: 0;
+    @include rect(100%, .5rem);
+    @include flexbox();
+    .lister {
+      @include flex(1);
+      @include flexbox();
+      @include justify-content(center);
+      @include align-items(center);
+      @include background-color(#fff);
+      img {
+        @include rect(.3rem, auto);
+      }
+      span {
+
+      }
+    }
+    .alone {
+      @include flex(1);
+      @include flexbox();
+      @include justify-content(center);
+      @include align-items(center);
+      @include background-color(#fff7f2);
+      @include color(#f97927);
+    }
+    .sells {
+      @include flex(1);
+      @include flexbox();
+      @include justify-content(center);
+      @include align-items(center);
+      @include background-color(#f97927);
+      @include color(#fff);
+    }
+  }
+}

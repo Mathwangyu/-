@@ -1,0 +1,62 @@
+@import '@/qunar/reset.scss';
+
+.rgcontent {
+  padding: 0 5%;
+  padding-top: 10%;
+  .am-list-item {
+    border: .01rem #ccc solid;
+    .am-list-line {
+      .am-input-label-5 {
+        @include rect(.5rem, auto);
+        font-weight: 700;
+        span {
+          @include color(#ccc);
+          margin-left: .05rem;
+        }
+      }
+    }
+    
+  }
+  .button {
+    margin-top: 10%;
+  }
+  .else {
+    @include rect(100%, auto);
+    @include flexbox();
+    @include justify-content(space-between);
+    margin: .2rem 0;
+    .fg {
+      @include color(#f00);
+      font-size: .14rem;
+    }
+    .rg {
+      @include color(#42bd56);
+    }
+  }
+  .del {
+    img {
+      @include rect(5%, auto);
+      position: fixed;
+      left: 5%;
+      top: 3%;
+    }
+  }
+  .outher {
+    @include rect(100%, auto);
+
+    p {
+      @include rect(100%, auto);
+      @include text-align(center);
+      @include color(#bbb);
+      margin: 35% 0 5% 0 ;
+    }
+    .pic {
+      @include rect(100%, auto);
+      @include text-align(center);
+      img {
+        @include rect(15%, auto);
+        margin: 0 5%;
+      }
+    }
+  }
+}

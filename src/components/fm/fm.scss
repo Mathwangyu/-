@@ -1,0 +1,54 @@
+@import '@/qunar/reset.scss';
+
+.fm {
+  @include rect(100%, 100%);
+  .header {
+    @include rect(100%, .6rem);
+    text-align: center;
+    border-bottom: .01rem #ccc solid;
+    margin-bottom: .5rem;
+    h1 {
+      margin: 0; padding: 0;
+      // font: 100 .26rem/.6rem "";
+      font-weight: 100;
+      font-size: .26rem;
+      line-height: .6rem;
+      display: inline-block;
+      a {
+        @include color(#000);
+      } 
+    }
+  }
+  .cont {
+    @include rect(100%, 4rem);
+    text-align: center;
+    .next {
+      @include rect(10%, auto);
+      position: fixed;
+      right: 5%;
+      top: 1%;
+    }
+    img {
+      @include rect(60%, auto);
+      border-radius: 50%;
+    }
+    audio {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+    }
+    h2 {
+      font-size: .2rem;
+      margin: .1rem 0;
+    }
+    p {
+      font-size: .16rem;
+    }
+    span {
+      @include color(#f00);
+      display: block;
+      margin: .1rem 0 ;
+    }
+  }
+}

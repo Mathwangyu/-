@@ -1,0 +1,46 @@
+@import '@/qunar/reset.scss';
+
+.content {
+  .filmpage {
+    @include rect(3.4rem, 100%);
+    margin-left: .18rem;
+    .title {
+      font-size: .24rem;
+      margin: .25rem .05rem .1rem .05rem;
+    }
+    .hot {
+      @include flexbox();
+      flex-wrap: wrap;
+      @include overflow();
+      
+      .updata {
+        @include rect(100%, 100%);
+        a {
+          display: inline-block;
+          margin-right: .02rem ;
+        }
+        .list {
+          text-align: center;
+          margin: .1rem 0 0 0;
+          @include rect(1.1rem, 2rem);
+          img {
+            @include rect(auto, 1.3rem);
+          }
+    
+          p {
+            @include color(#000);
+            margin-top: .03rem;
+            @include ellipsis();
+          }
+    
+          .fen {
+            @include color(#000);
+            margin-top: .03rem;
+          }
+    
+        }
+      }
+      
+    }
+  }
+}

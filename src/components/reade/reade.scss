@@ -1,0 +1,88 @@
+@import '@/qunar/reset.scss';
+
+
+.reade {
+  @include rect(100%, 100%);
+  @include overflow();
+  .header {
+    @include rect(100%, .5rem);
+    border-bottom: .01rem solid #ccc;
+    p {
+      // font: 700 .18rem/.18rem "";
+      font-weight: 700;
+      font-size: .18rem;
+      @include color(#5dcaad);
+      margin:.1rem 0 0 .1rem;
+    }
+    span {
+      font-size: .12rem;
+      margin: .08rem 0 0 .03rem;
+    }
+  }
+  .cont {
+    @include rect(100%, 100%);
+    @include background-color(#f5f5f5);
+    padding:0 .1rem;
+    h1 {
+      margin:0;padding: 0;
+      padding: .2rem 0;
+    }
+    .del {
+      padding: .2rem 0;
+      h2 {
+        // font:700 .17rem/.17rem "";
+        font-size: .17rem;
+        margin: .2rem 0;
+      }
+      .tol {
+        @include rect(100%, auto);
+        @include flexbox();
+        @include overflow();
+        overflow-x: scroll;
+        .book {
+          display: block;
+          img {
+            @include rect(1rem, auto);
+          }
+          .til {
+            font-size: .14rem;
+            @include color(#000);
+            @include rect(.9rem, auto);
+            @include ellipsis(.9rem, 2);
+          }
+          span {
+            font-size: .12rem;
+            @include color(#aaa);
+          }
+          p {
+  
+          }
+        }
+      }
+    }
+  }
+  .classify {
+    @include rect(100%, auto);
+    h2 {
+      // font:700 .17rem/.17rem "";
+      font-size: .17rem;
+      padding: .1rem 0;
+      border-bottom: .01rem solid #ccc;
+    }
+    .kind {
+      @include rect(100%, auto);
+      @include flexbox();
+      @include justify-content(space-between);
+      flex-wrap: wrap;
+      padding: .1rem 0 .4rem 0;
+      .lei {
+        @include rect(1.1rem, auto);
+        @include color(#999);
+        @include background-color(#dfdfdf);
+        text-align: center;
+        margin: .05rem 0;
+        padding: .02rem 0;
+      }
+    }
+  }
+}

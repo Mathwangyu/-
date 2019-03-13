@@ -1,0 +1,26 @@
+@import '@/qunar/reset.scss';
+
+.content {
+  .topsf {
+    .background {
+      
+      img {
+        @include rect(100%, auto);
+      }
+    }
+    p {
+      // font: 700 .2rem/.2rem "";
+      font-weight: 700;
+      font-size: .2rem;
+      text-align: center;
+      margin: 8% 0;
+    }
+    span {
+      display: block;
+      // font:  .14rem/.14rem "";
+      font-size: .14rem;
+      text-align: center;
+      margin: 5% 0;
+    }
+  }
+}

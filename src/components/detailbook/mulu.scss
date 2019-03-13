@@ -1,0 +1,96 @@
+@import '@/qunar/reset.scss';
+
+.top {
+  @include background-color(#fff);
+  .head {
+    @include rect(100%, .82rem);
+    @include flexbox();
+    @include justify-content(center);
+    @include align-items(center);
+    img {
+      @include rect(.18rem, .18rem);
+      margin-right: .2rem;
+    }
+    .try {
+      @include rect(3rem, auto);
+      h1 {
+        // font: 900 .15rem/.15rem "";
+        font-weight: 900;
+        font-size: .15rem;
+        @include color(#000);
+        span {
+          font-size: .08rem;
+          border: .01rem #42bd56 solid;
+          @include color(#42bd56);
+          float: right;
+        }
+      }
+      .time {
+        @include flexbox();
+        @include justify-content(space-between);
+        p {
+          // font: .12rem/.12rem "";
+          font-size: .12rem;
+          @include color(#999);
+        }
+        span {
+          // font: .12rem/.12rem "";
+          font-size: .12rem;
+          @include color(#999);
+        }
+      } 
+    }
+  }
+  .cont {
+    .tal {
+      @include rect(100%, auto);
+      padding:.12rem .2rem;
+      @include background-color(#eee);
+      p {
+        span {
+          margin-left: 1.6rem;
+          @include color(#42bd56);
+        }
+      }
+    }
+    .lis {
+      @include rect(100%, .82rem);
+      @include flexbox();
+      @include justify-content(center);
+      @include align-items(center);
+    img {
+      @include rect(.18rem, .18rem);
+      margin-right: .2rem;
+    }
+    .try {
+      @include rect(3rem, auto);
+      h1 {
+        // font: 900 .15rem/.15rem "";
+        font-weight: 900;
+        font-size: .15rem;
+        @include color(#000);
+        span {
+          font-size: .08rem;
+          border: .01rem #42bd56 solid;
+          @include color(#42bd56);
+          float: right;
+        }
+      }
+      .time {
+        @include flexbox();
+        @include justify-content(space-between);
+        p {
+          // font: .12rem/.12rem "";
+          font-size: .12rem;
+          @include color(#999);
+        }
+        span {
+          // font: .12rem/.12rem "";
+          font-size: .12rem;
+          @include color(#999);
+        }
+      } 
+    }
+    }
+  }
+}

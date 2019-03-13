@@ -1,0 +1,84 @@
+@import '@/qunar/reset.scss';
+
+.header {
+  .top {
+    border-bottom: .02rem #eee solid;
+  }
+}
+.content {
+  @include background-color(#fff);
+  @include rect(100%, 100%);
+  .page {
+    @include rect(100%, auto);
+    padding: 7% 5% 0 5%;
+  .top {
+    @include rect(100%, auto);
+    @include flexbox();
+    @include justify-content(space-around);
+    @include overflow();
+    flex-wrap: wrap;
+    
+      .a {
+        @include rect(1.65rem, .5rem);
+        @include color(#000);
+        display: block;
+        text-align: center;
+        line-height: .5rem;
+        @include background-color(#eee);
+        margin-top: .05rem;
+      }
+    }
+    .conthome {
+      @include rect(100%, auto);
+      h2 {
+        // font:700 .24rem/.24rem "Microsoft YaHei";
+        font-weight: 700;
+        font-size: .24rem;
+
+        text-align: center;
+        padding: .3rem 0;
+        border-bottom: .01rem #eee dashed;
+      }
+      .ss {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        overflow: hidden;
+      }
+      .home1 {
+        margin: .3rem 0;
+        border-bottom: .01rem #eee solid;
+        padding-bottom: .2rem;
+        .l {
+          @include rect(100%, auto);
+          @include flexbox();
+          @include justify-content(space-between);
+          .let {
+            @include flex();
+            h3 {
+              // font: 600 .17rem/.16rem "";
+              font-size: .17rem;
+              margin: .05rem 0 .1rem 0;
+              
+            }
+            span {
+              @include ellipsis(100%, 3);
+              
+              @include rect(2.2rem, .6rem);
+              @include color(#999);
+            }
+          }
+          img {
+            @include rect(.87rem, 1rem);
+          }
+        }
+        .del {
+          @include color(#bbb);
+          margin: .05rem 0;
+        }
+      }
+    }
+  }
+}
+
+  

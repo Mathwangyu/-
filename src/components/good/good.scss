@@ -1,0 +1,85 @@
+@import '@/qunar/reset.scss';
+body {
+  @include overflow();
+}
+
+.goods {
+  @include overflow();
+  .new {
+    padding: 0 .15rem;
+    border-bottom: .15rem #eee solid;
+    h2 {
+      // font: 100 .22rem/.24rem "";
+      font-weight: 100;
+      font-size: .22rem;
+      line-height: .24rem;
+      margin: .2rem 0 0 0;
+    }
+    .tal {
+      @include flexbox();
+      flex-wrap: wrap;
+      @include justify-content(space-between);
+      .lie {
+        padding-top: .2rem;
+        img {
+          @include rect(1.65rem, 1.65rem);
+        }
+        p {
+          // font:100 .14rem/.14rem "";
+          font-size: .14rem;
+          @include color(#666);
+          margin:.15rem  0 .08rem ;
+        }
+        span {
+          // font:100 .12rem/.12rem "";
+          font-size: .12rem;
+          @include color(#999);
+        }
+        .price {
+          @include color(#f97927);
+          // font:100 .16rem/.16rem "";
+          font-size: .16rem;
+          margin: .1rem 0;
+          span {
+            // font:100 .16rem/.16rem "";
+            font-size: .16rem;
+            @include color(#f97927);
+          }
+        }
+      }
+  
+    }
+  }
+  .active {
+    padding: 0 .15rem;
+    h2 {
+      // font: 100 .22rem/.24rem "";
+      font-weight: 100;
+      font-size: .22rem;
+      line-height: .24rem;
+      margin: .2rem 0 0 0;
+    }
+    .aci {
+      .achot {
+        @include flexbox();
+        margin-top: .2rem;
+        img {
+          @include rect(.85rem, .85rem);
+        }
+        .con {
+          @include flex();
+          @include background-color(#eee);
+          padding-left: .18rem;
+          p {
+            @include color(#44883e);
+            margin: .2rem 0 .05rem 0;
+            font-size: .15rem;
+          }
+          span {
+            @include color(#ccc)
+          }
+        }
+      }
+    }
+  }
+}

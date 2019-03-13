@@ -1,0 +1,72 @@
+@import '@/qunar/reset.scss';
+
+.content {
+ .userpage {
+   .top {
+     @include flexbox();
+     @include rect(100%, 1.24rem);
+     @include background-color(#555);
+     margin-bottom: .3rem;
+     .tou {
+       @include rect(1.1rem, 100%);
+       img {
+         @include rect(.74rem, auto);
+         border-radius: 50%;
+         margin: .2rem 0 0 .2rem;
+       }
+     }
+     .nickname {
+       @include flex();
+       .person {
+         margin-top: .2rem;
+         border-bottom: .01rem #999 solid;
+         p {
+           @include color(#fff);
+           font-size: .2rem;
+           padding: 0;
+           margin: 0;
+         }
+         .num {
+           margin-bottom: .03rem;
+           @include rect(100%, auto);
+           @include flexbox();
+           @include justify-content(space-between);
+           span {
+            @include color(#fff);
+           }
+           a {
+            @include color(#fff);
+            margin-right: .2rem;
+           }
+         }
+       }
+
+       .active {
+         span {
+          @include color(#fff);
+          display: inline-block;
+          margin: .1rem .2rem;
+         }
+       }
+     }
+   }
+   ul {
+     @include flexbox();
+     flex-wrap: wrap;
+     li {
+       @include rect(.9375rem, 1rem);
+       @include flexbox();
+       @include flex-direction(column);
+       @include justify-content(center);
+       @include align-items(center);
+       border-bottom: .01rem #eee solid;
+       img {
+         @include rect(.26rem, .26rem);
+       }
+       span {
+         margin-top: .1rem;
+       }
+     }
+   }
+ }
+}

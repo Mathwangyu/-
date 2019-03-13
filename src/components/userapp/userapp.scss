@@ -1,0 +1,21 @@
+@import '@/qunar/reset.scss';
+
+.box {
+  .userapph {
+    @include rect(100%, auto);
+    @include text-align();
+    margin: 15% 0 5% 0 ;
+    h1 {
+      // font: 500 .3rem/.3rem "";
+      font-weight: 500;
+      font-size: .3rem;
+    }
+    .agree {
+      @include color(#bbb);
+      a {
+        margin-left: 2%;
+        @include color(#42bd56);
+      }
+    }
+  }
+}

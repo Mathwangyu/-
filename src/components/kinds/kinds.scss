@@ -1,0 +1,176 @@
+@import '@/qunar/reset.scss';
+
+.TalionNav-secondary {
+  display:initial;
+  max-width:650px;
+  left: 50%;
+  width: 100%;
+  box-sizing: border-box;
+  transform: translateX(-50%);
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: #ffffff;
+  color:#111;
+  font-size: 12px;
+  font-family: "Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
+  .close-nav {
+    top:20px;
+    left:18px;
+    color:#42bd56;
+    font-size:16px;
+    text-decoration: none;
+  }
+  .sea {
+    @include flexbox();
+    @include rect(100%, auto);
+    a {
+      @include flex(.3);
+      @include background-color(#eee);
+      // font:700 .22rem/.44rem "";
+      font-weight: 700;
+      font-size: .22rem;
+      line-height: .44rem;
+      text-align: center;
+      @include color(#42bd56);
+    }
+    .ss {
+      @include flex();
+    }
+
+  }
+  ul {
+    padding-top: 25px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+    margin: 10% 0;
+    li{
+      width:33.33%;
+      flex-wrap: wrap;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      div{
+        float:left;
+        position: relative;
+        left:50%;
+        top: 0;
+        a{
+          display: block;
+          text-align: center;
+          margin-bottom: 25px;
+          position: relative;
+          left: -50%;
+          top: 0;
+          text-decoration: none;
+          strong {
+            display: block;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 28px;
+          }
+          span {
+            display: block;
+            color: #999;
+            height: 17px;
+            font-size: 12px;
+            letter-spacing: 1px;
+          }
+        }
+        .a1 {
+          strong{
+            color: rgb(35, 132, 232);
+          }
+        }
+        .a2 {
+          strong{
+            color: rgb(230, 70, 126);
+          }
+        }
+        .a3 {
+          strong{
+            color: rgb(159, 120, 96);
+          }
+        }
+        .a4 {
+          strong{
+            color: rgb(225, 100, 77);
+          }
+        }
+        .a5 {
+          strong{
+            color: rgb(122, 106, 219);
+          }
+        }
+        .a6 {
+          strong{
+            color: rgb(42, 184, 204);
+          }
+        }
+        .a7 {
+          strong{
+            color: rgb(87, 116, 197);
+          }
+        }
+        .a8 {
+          strong{
+            color: rgb(64, 207, 169);
+          }
+        }
+        .a9 {
+          strong{
+            color: rgb(159, 120, 96);
+          }
+        }
+        .a10 {
+          strong{
+            color: rgb(244, 143, 46);
+          }
+        }
+        .a11 {
+          strong{
+            color: rgb(35, 132, 232);
+          }
+        }
+        .a12 {
+          strong{
+            color: rgb(66, 189, 86);
+          }
+        }
+      }
+    }
+  }
+  .navBottom{
+    width: 100%;
+    border-bottom: 1px solid #f3f3f3;
+    .nav-item {
+      border-top: 1px solid #f3f3f3;
+      padding: 13px 0;
+      a{
+        display: inline-block;
+        box-sizing: border-box;
+        margin: 0 auto;
+        text-align: center;
+        text-decoration: none;
+        font-size: 15px;
+        color: #42bd56;
+      }
+      .toLogin {
+        width: 100%;
+      }
+      .toPC{
+        width:50%;
+        border-right: 1px solid #e5e5e5;
+      }
+      .toApp{
+        width:50%;
+      }
+    }
+  }
+}

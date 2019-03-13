@@ -1,0 +1,36 @@
+@import '@/qunar/reset.scss';
+
+.detal {
+
+  padding: 0 7%;
+  .head {
+
+    h1 {
+
+      @include rect(100%, auto);
+      font-size: .24rem;
+    }
+    .pric {
+      @include flexbox();
+      @include rect(100%, auto);
+      @include justify-content(space-between);
+      .l {
+        p {
+          @include color(#f97927);
+        }
+        span {
+          font-size: .1rem;
+        }
+      }
+      .r {
+        margin-top: .1rem;
+        img {
+          @include rect(.13rem, .13rem);
+        }
+        span {
+          font-size: .1rem;
+        }
+      }
+    }
+  }
+}
